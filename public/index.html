@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>The Ultimate Drawing App</title>
+		<meta charset="utf-8">
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<link rel="stylesheet" href="buttons/css/buttons.css">		
+		<link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/pure-min.css">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+	</head>
+	<body>
+
+		<div id="msg-wrap">
+
+			<!-- Message template -->
+			<div class="msg-template" style="visibility:hidden;">
+				<div class="left-column">
+					<img class="profile" src="images/15.jpg">
+				</div><!--
+				--><div class="right-column">
+					<div class="meta">
+						<div class="username">Bruce</div>
+						<div class="time">10:10am</div>
+					</div>
+				</div>
+				<div class="msg">
+					Get off the computer and go outside!!!
+				</div>
+			</div>
+
+			<!-- Form for submitting messages -->
+			<form id="msg-form" class="pure-form" autocomplete="off">
+				<input type="text" name="new-msg"><!--
+				--><button type="submit" class="pure-button pure-button-primary"><i class="fa fa-paper-plane-o"></i></button>
+			</form>
+			
+		</div><!--
+
+
+		--><div id="draw-wrap">
+
+			<div class="controls">	
+				<a href="#" id="button-1" class="button button-3d-mighty-slate button-circle"></a>
+				<a href="#" id="button-2" class="button button-3d-pacifica button-circle"></a>
+				<a href="#" id="button-3" class="button button-3d-orange-chic button-circle"></a>
+				<a href="#" id="button-4" class="button button-3d-cheery-pink button-circle"></a>
+				<a href="#" id="button-5" class="button button-3d-grandmas-pillow button-circle"></a>
+			</div>
+
+		</div>
+
+		<script type="text/javascript" src="./buttons/js/buttons.js"></script>
+		<script src="/socket.io/socket.io.js"></script>
+		<script src="./p5/p5.min.js"></script>
+		<script src="./js/disable-right-click.js"></script>
+		<script src="./js/marker.js"></script>
+		<script src="./js/moment.js"></script>
+		<script src="./js/chat.js"></script>
+		<script src="./js/sketch.js"></script>
+	</body>
+</html>
